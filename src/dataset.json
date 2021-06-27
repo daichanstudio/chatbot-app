@@ -1,0 +1,186 @@
+{
+    "init": {
+        "answers": [
+            {"content": "転出、転入する時にはどうすればいい？", "nextId": "job_offer"},
+            {"content": "税金について相談したい", "nextId": "consultant"},
+            {"content": "ごみの捨て方について知りたい", "nextId": "garbage"},
+            {"content": "子育てに関して相談したい", "nextId": "dating"}
+        ],
+        "question": "こんにちは！ご用件はなんでしょうか？"
+    },
+    "job_offer": {
+        "answers": [
+            {"content": "郵送でもできるの？", "nextId": "website"},
+            {"content": "どこで手続きができるの？", "nextId": "webapp"},
+            {"content": "本人以外でも手続きはできるの？", "nextId": "automation_tool"},
+            {"content": "その他", "nextId": "other_jobs"}
+        ],
+        "question": "届出が必要です。証明書と免許証を持ってきてください。"
+    },
+
+    "garbage": {
+        "answers": [
+            {"content": "ごみの収集日が知りたい。", "nextId": "how-to-trash"},
+            {"content": "粗大ごみを出したい。", "nextId": "bulky-garbage"},
+            {"content": "リサイクルできるものはある？", "nextId": "recycling"},
+            {"content": "その他", "nextId": "other_jobs"}
+        ],
+        "question": "ごみの捨て方ですね。"
+    },
+    "how-to-trash": {
+        "answers": [
+            {"content": "ごみの収集日が知りたい。", "nextId": "how-to-trash"},
+            {"content": "地区ごとに違うの", "nextId": "webapp"},
+            {"content": "本人以外でも手続きはできるの？", "nextId": "automation_tool"},
+            {"content": "その他", "nextId": "other_jobs"}
+        ],
+        "question": ""
+    },
+    "bulky-garbage": {
+        "answers": [
+            {"content": "ごみの収集日が知りたい。", "nextId": "how-to-trash"},
+            {"content": "粗大ごみを出したい。", "nextId": "webapp"},
+            {"content": "リサイクルできるものはある？", "nextId": "automation_tool"},
+            {"content": "その他", "nextId": "other_jobs"}
+        ],
+        "question": "ごみの捨て方ですね。"
+    },
+
+
+    "website": {
+        "answers": [
+            {"content": "詳しい郵送手続きについて", "nextId": "http://www.city.musashino.lg.jp/kurashi_guide/todokede/1004523/1004527.html"},
+            {"content": "本人以外でも手続きはできるの？", "nextId": "automation_tool"},
+            {"content": "最初の質問に戻る", "nextId": "init"}
+        ],
+        "question": "できます。詳しくはこちらをご覧ください。"
+    },
+    "webapp": {
+        "answers": [
+            {"content": "必要なものはある？", "nextId": "goods"},
+            {"content": "本人以外でも手続きはできるの？", "nextId": "automation_tool"},
+            {"content": "役所がやっている時間に行けないわ。", "nextId": "holiday"},
+            {"content": "最初の質問に戻る", "nextId": "init"}
+        ],
+        "question": "市役所市民課、または市政センターへお越しください。"
+    },
+
+    "holiday": {
+        "answers": [
+            {"content": "必要なものはある？", "nextId": "goods"},
+            {"content": "本人以外でも手続きはできるの？", "nextId": "automation_tool"},
+            {"content": "郵送でもできるの？", "nextId": "website"},
+            {"content": "最初の質問に戻る", "nextId": "init"}
+        ],
+        "question": "夜間窓口が月曜日・水曜日・金曜日の午後5時から午後8時まで、休日窓口は第2・第4日曜日の午前9時から午後4時までやってますよ！"
+    },
+
+    "goods": {
+        "answers": [
+            {"content": "必要なものはある？", "nextId": "http://www.city.musashino.lg.jp/kurashi_guide/todokede/jumiinhyo/1004519.html"},
+            {"content": "最初の質問に戻る", "nextId": "init"}
+        ],
+        "question": "身分確認ができる書類と、転入される場合は、転出証明書が必要です。"
+    },
+
+
+
+    "automation_tool": {
+        "answers": [
+            {"content": "委任状をダウンロードする", "nextId": "http://www.city.musashino.lg.jp/kurashi_guide/todokede/jumiinhyo/1004519.html"},
+            {"content": "最初の質問に戻る", "nextId": "init"}
+        ],
+        "question": "委任状が必要です。コチラからダウンロードできます。"
+    },
+    "other_jobs": {
+        "answers": [
+            {"content": "お問い合わせはこちら", "nextId": "contact"},
+            {"content": "最初の質問に戻る", "nextId": "init"}
+        ],
+        "question": "その他についてですね。コチラからお問い合わせできます。"
+    },
+    "consultant": {
+        "answers": [
+            {"content": "税金の計算方法について知りたい。", "nextId": "tax-calc"},
+            {"content": "期限までに支払えない。", "nextId": "community"},
+            {"content": "支払い方法について教えてほしい。", "nextId": "payment"},
+            {"content": "最初の質問に戻る", "nextId": "init"}
+        ],
+        "question": "払ってください。"
+    },
+
+    "tax-calc": {
+        "answers": [
+            {"content": "税金の計算方法について知りたい。", "nextId": "https://www.youtube.com/channel/UC-bOAxx-YOsviSmqh8COR0w"},
+            {"content": "期限までに支払えない。", "nextId": "community"},
+            {"content": "支払い方法について教えてほしい。", "nextId": "payment"},
+            {"content": "最初の質問に戻る", "nextId": "init"}
+        ],
+        "question": "個人住民税は前年中の所得から控除した額に対して一律10％です。"
+    },
+
+
+    "reissue": {
+        "answers": [
+
+            {"content": "", "nextId": "https://www.youtube.com/channel/UC-bOAxx-YOsviSmqh8COR0w"},
+            {"content": "期限までに支払えない。", "nextId": "community"},
+            {"content": "口座振替にしたい。", "nextId": "account"},
+            {"content": "最初の質問に戻る", "nextId": "init"}
+        ],
+        "question": "納付書の再発行ですね！納税課で受付しております。"
+    },
+
+    "payment": {
+        "answers": [
+
+            {"content": "納付書を再発行してほしい。", "nextId": "https://www.youtube.com/channel/UC-bOAxx-YOsviSmqh8COR0w"},
+            {"content": "期限までに支払えない。", "nextId": "community"},
+            {"content": "口座振替にしたい。", "nextId": "account"},
+            {"content": "最初の質問に戻る", "nextId": "init"}
+        ],
+        "question": "納付書、口座振替、クレジットなどで支払うことができます。納め忘れがない、口座振替がおすすめです！"
+    },
+
+
+
+
+
+
+
+    "account": {
+        "answers": [
+            {"content": "詳しい手続きの方法について（外部ページ）", "nextId": "http://www.city.musashino.lg.jp/kurashi_guide/zeikin/nouzeihouhou/1004682.html"},
+            {"content": "問い合わせる", "nextId": "community"},
+            {"content": "最初の質問に戻る", "nextId": "init"}
+        ],
+        "question": "口座振替をご希望ですね！納税課管理係で受付してます！"
+    },
+
+
+
+
+    "community": {
+        "answers": [
+            {"content": "どんな活動をしているの？", "nextId": "community_activity"},
+            {"content": "コミュニティに参加したい", "nextId": "https://torahack.web.app/community/"},
+            {"content": "最初の質問に戻る", "nextId": "init"}
+        ],
+        "question": "そんなことないと思いますよ。"
+    },
+    "community_activity": {
+        "answers": [
+            {"content": "さらに詳細を知りたい", "nextId": "https://youtu.be/tIzE7hUDbBM"},
+            {"content": "コミュニティに参加したい", "nextId": "https://torahack.web.app/community/"},
+            {"content": "最初の質問に戻る", "nextId": "init"}
+        ],
+        "question": "フロントエンド向けの教材の提供、キャリアや勉強法に関するメルマガの配信、週1のオンライン作業会などを開催しています！\n詳細はYouTube動画で紹介しています。"
+    },
+    "dating": {
+        "answers": [
+            {"content": "DMする", "nextId": "https://twitter.com/torahack_"},
+            {"content": "最初の質問に戻る", "nextId": "init"}
+        ],
+        "question": "まずは一緒にランチでもいかがですか？DMしてください😘"
+    }
+}
