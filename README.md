@@ -5,10 +5,8 @@ Basic Chat App at my company. Please check them out!
 <img width="1323" alt="スクリーンショット 2021-08-09 9 16 34" src="https://user-images.githubusercontent.com/72646084/128777948-234ba82c-b0ac-44b5-8115-369c823e5a04.png">
 
 # Deploy on Firebase
-
 https://chatbot-app-b9e83.web.app
 
- 
 # Features
 I'm using React.js, Material UI, and slack incoming webhook.
 
